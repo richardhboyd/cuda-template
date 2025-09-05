@@ -2,6 +2,6 @@
 #define KERNEL_CUH__
 
 // Function to launch the CUDA kernel
-void call_cuda_kernel();
+void call_cuda_kernel(int input);
 
 #endif // KERNEL_CUH__

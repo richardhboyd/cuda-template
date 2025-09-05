@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
 enable_language(CUDA)
 project(cmake_and_cuda LANGUAGES CXX CUDA)
+set(CMAKE_CUDA_ARCHITECTURES "89" CACHE STRING "Specify CUDA architectures")
 
 add_executable(main main.cpp)
 add_subdirectory(kernels)
